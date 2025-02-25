@@ -1,0 +1,88 @@
+body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: white;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: black;
+    }
+
+    .note-input {
+      display: flex;
+      margin-bottom: 20px;
+    }
+
+    .note-input textarea {
+      flex: 1;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      resize: none;
+    }
+
+    .note-input button {
+      margin-left: 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #ffcc00;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .note-input button:hover {
+      background-color: #e6b800;
+    }
+
+    .notes {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .note {
+      padding: 15px;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      position: relative;
+    }
+
+    .note p {
+      margin: 0;
+      word-wrap: break-word;
+    }
+
+    .delete {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: #ff6b6b;
+      color: #fff;
+      border: none;
+      border-radius: 50%;
+      width: 25px;
+      height: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    .delete:hover {
+      background: #e65c5c;
+    }
